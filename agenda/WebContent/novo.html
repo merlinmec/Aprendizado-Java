@@ -1,0 +1,43 @@
+	<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+<title>Agenda de Contatos</title>
+<link rel="icon" href="imagens/favicon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>	
+<body>
+	<h1>Criar Novo Contato</h1>
+	<form id="form" name="formContato" action="insert">
+		<table>
+			<tr>
+				<td><input type ="text" name="nome" placeHolder="Nome" class="Caixa1" maxlength="25" ></td>
+			</tr>
+			<tr>
+				<td><input type ="text" name="fone" placeHolder="Fone" class="Caixa2" onkeypress="$(this).mask('(00)90000-0000');" ></td>
+			</tr>
+			<tr>
+				<td><input type ="email" name="email" placeHolder="E-mail" class="Caixa1"></td>
+			</tr>
+			<tr>
+				<td><input type ="text" name="rua" placeHolder="Rua" class="Caixa1" maxlength="40" ></td>
+			</tr>
+			<tr>
+				<td><input type ="text" name="numero" placeHolder="Nº da Residência" class="Caixa1" maxlength="10" ></td>
+			</tr>
+			<tr>
+				<td><input type ="text" name="bairro" placeHolder="Bairro" class="Caixa1" maxlength="40" ></td>
+			</tr>
+			<tr>
+				<td><input type ="text" name="cidade" placeHolder="Cidade" class="Caixa1" maxlength="30" ></td>
+			</tr>
+			<tr>
+				<td><input type ="text" name="estado" placeHolder="Estado" class="Caixa1" maxlength="20" ></td>
+			</tr>
+		</table>
+		<button value="Adicionar" onclick="insert" class="Botao1">Adicionar</button>
+	</form>
+</body>
+</html>
